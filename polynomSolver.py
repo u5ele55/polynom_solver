@@ -2,15 +2,6 @@ from math import log
 
 eps = 1e-10
 
-def solve_quadratic(a,b,c):
-    D = b**2 - 4*a*c
-
-    if D < 0:
-        return None
-    if D == 0:
-        return -b/(2*a)
-    return [(-b+D**(1/2))/(2*a), (-b-D**(1/2))/(2*a)]
-
 def deriv_coeffs(degree, coeffs):
     return [ elem*(degree-index) for index, elem in enumerate(coeffs[:-1]) ]
 
@@ -84,8 +75,8 @@ if __name__ == '__main__':
     coeffs = [float(i) for i in input("Enter coefficients: ").split()]
 
     accuracy = round(-log(eps, 10)) - 2
-    solutions = [round(i, accuracy) for i in sorted(solve_polynom(deg, coeffs))]
-    answer = set(solutions)
+    solutions = [round(i, accuracy) for i in solve_polynom(deg, coeffs)]
+    answer = sorted(set(solutions))
 
     print("Solutions: ")
     for ind, item in enumerate(answer):
