@@ -15,4 +15,6 @@ To mention, instead of -∞ and ∞ we will find such numbers B and T s.t. f(x) 
 # Example
 Let's have a look at this simple example: <br>
 ![image](https://user-images.githubusercontent.com/99137907/178109096-8c67eac4-b440-4273-a106-353637a54f23.png) <br>
-As you can see, roots x1, x2, x3 of f(x) are separated by r1 and r2 - roots of f'(x), and, r1 and r2 lie on different sides relative to t1 - root of the f''(x).
+As you can see, roots x1, x2, x3 of f(x) are separated by r1 and r2 - roots of f'(x), and, r1 and r2 lie on different sides relative to t1 - root of the f''(x).<br>
+Program output:<br>
+![image](https://user-images.githubusercontent.com/99137907/178110410-fedb616b-907a-43e2-8942-6a8ed4848f48.png)
