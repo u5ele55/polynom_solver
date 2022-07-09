@@ -57,10 +57,10 @@ def solve_polynom(degree: int, coeffs: list):
         if f(l)*f(r) > 0:
             continue
         
-        # Знаки на концах отрезка различаются
+        # Signs of f(l) and f(r) are different
         #y ↑ f(l) _  
         #  |    |  \
-        #  |----y---\----r-→ x
+        #  |----l---\----r-→ x
         #  |         \   |
         #  |          -- f(r)
         
